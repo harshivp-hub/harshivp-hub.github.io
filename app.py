@@ -3,7 +3,7 @@ from PIL import ImageGrab
 import pytesseract
 import cv2
 import numpy
-from readingscreen import texttobraille
+from readingscreen import TextToBraille
 
 app = Flask(__name__)
 
@@ -16,8 +16,10 @@ def get_braille():
     # extract text
     text = pytesseract.image_to_string(gray)
     # convert to braille
-    final_string= texttobraille(text)
-    return (final_string)
+    final_string=TextToBraille(text)
+    print(text)
+
+    return final_string
 
 if __name__ == '__main__':
     app.run(debug=True,port=5000)
