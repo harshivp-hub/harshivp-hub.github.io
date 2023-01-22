@@ -1,1 +1,2 @@
-# harshivp-hub.github.io
+#compile app.py
+#run readingscreen.py
