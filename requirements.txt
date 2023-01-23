@@ -1,1 +1,5 @@
-Flask
+flask
+pytesseract
+numpy
+mss
+pyttsx3
