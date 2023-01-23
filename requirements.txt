@@ -3,3 +3,5 @@ pytesseract
 numpy
 mss
 pyttsx3
+opencv-python
+SpeechRecognition
